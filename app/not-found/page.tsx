@@ -1,3 +1,4 @@
+"use client"
 import Link from 'next/link';
 import { Home, ArrowLeft, Search, Calendar, Mail } from 'lucide-react';
 import { Header } from '../../components/shared/header';
@@ -5,7 +6,7 @@ import { Footer } from '../../components/shared/footer';
 
 export default function NotFound() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-gray-50 to-white">
+    <main className="min-h-screen bg-linear-to-br from-gray-50 to-white">
       <Header />
       
       <div className="flex items-center justify-center min-h-[calc(100vh-80px)] px-4">
@@ -15,7 +16,7 @@ export default function NotFound() {
             <div className="text-9xl lg:text-[12rem] font-bold text-gray-200 relative">
               404
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-6xl lg:text-8xl font-bold bg-gradient-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent">
+                <div className="text-6xl lg:text-8xl font-bold bg-linear-to-r from-teal-600 to-blue-600 bg-clip-text text-transparent">
                   404
                 </div>
               </div>
@@ -90,12 +91,6 @@ export default function NotFound() {
                 type="search"
                 placeholder="Search our website..."
                 className="w-full pl-12 pr-4 py-3 border-2 border-gray-300 rounded-xl focus:border-teal-500 focus:ring-2 focus:ring-teal-500/20 transition-all duration-200 text-gray-900 placeholder-gray-400"
-                onKeyPress={(e) => {
-                  if (e.key === 'Enter') {
-                    // Simple search redirect - in real app, you'd implement proper search
-                    window.location.href = `/?search=${encodeURIComponent(e.currentTarget.value)}`;
-                  }
-                }}
               />
             </div>
           </div>
