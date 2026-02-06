@@ -74,7 +74,7 @@ export function HeroSection() {
               <div className="space-y-4 lg:space-y-6">
                 <div className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300">
                   <img
-                    src="http://www.lakeviewvillagehall.org.uk/s/cc_images/teaserbox_14017428.jpg?t=1577570312"
+                    src="https://res.cloudinary.com/drmfkhqso/image/upload/v1770386725/don-kaveen-4LLHJHyXQVk-unsplash_qjkz5k.jpg"
                     alt="Lakeview Village Hall exterior"
                     className="w-full h-48 lg:h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                   />

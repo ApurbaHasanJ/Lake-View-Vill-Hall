@@ -9,7 +9,7 @@ export function AboutSection() {
             <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-2xl">
               <div className="absolute inset-0 bg-linear-to-br from-teal-100/20 to-transparent"></div>
               <Image
-                src="http://www.lakeviewvillagehall.org.uk/s/cc_images/teaserbox_14017428.jpg?t=1577570312"
+                src="https://res.cloudinary.com/drmfkhqso/image/upload/v1770386725/don-kaveen-4LLHJHyXQVk-unsplash_qjkz5k.jpg"
                 alt="Lakeview Village Hall interior"
                 fill
                 className="object-cover"
