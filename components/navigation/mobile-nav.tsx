@@ -30,7 +30,7 @@ export function MobileNav() {
       <div className={`md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-gray-200 transform transition-all duration-300 ease-out ${
         isMenuOpen ? 'translate-y-0' : 'translate-y-full'
       }`}>
-        <div className="bg-white rounded-t-2xl shadow-2xl">
+        <div className="bg-white rounded-t-2xl shadow-2xl mx-2">
           <div className="p-4">
             {/* Handle */}
             <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-6" />

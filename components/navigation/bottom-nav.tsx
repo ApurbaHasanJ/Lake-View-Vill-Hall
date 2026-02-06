@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { Home, Calendar, Image, Phone, Menu, X } from 'lucide-react';
+import { Home, Calendar, Image, Phone, Menu, X, Palette } from 'lucide-react';
 
 const bottomNavigation = [
   { name: 'Home', href: '/', icon: Home },
@@ -50,10 +50,10 @@ export function BottomNav({ isMenuOpen, onMenuToggle }: BottomNavProps) {
         <div className="md:hidden fixed inset-0 z-40  bg-opacity-50" onClick={onMenuToggle} />
       )}
       {isMenuOpen && (
-        <div className="md:hidden fixed bottom-16 left-0 right-0 z-50 bg-white rounded-t-2xl shadow-xl">
+        <div className="md:hidden fixed bottom-16 left-0 right-0 z-50 bg-white mx-2 rounded-t-2xl shadow-xl">
           <div className="p-4">
             <div className="w-12 h-1 bg-gray-300 rounded-full mx-auto mb-4" />
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-3 gap-2">
               <a href="/whats-on" className="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 rounded-lg transition-colors">
                 <Calendar size={18} className="mr-3" />
                 <span className="font-medium">What's On</span>
@@ -63,7 +63,7 @@ export function BottomNav({ isMenuOpen, onMenuToggle }: BottomNavProps) {
                 <span className="font-medium">Groups</span>
               </a>
               <a href="/design" className="flex items-center px-4 py-3 text-gray-700 hover:bg-blue-50 rounded-lg transition-colors">
-                <Phone size={18} className="mr-3" />
+                <Palette size={18} className="mr-3" />
                 <span className="font-medium">Design</span>
               </a>
             </div>
